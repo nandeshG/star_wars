@@ -1,0 +1,45 @@
+<div class="row">
+    <div class="col-lg-4">
+        <div class="card" style="width: 18rem;">
+            <p>people-list works!</p>
+        </div>
+    </div>
+    <div class="col-lg-8">
+        <div class="card">
+            <div class="row">
+                <h6 class="m-3 text-success">SEARCH RESULTS</h6>
+            </div>
+            <div class="row">
+                <div class="col-sm-11 m-3">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th class="bg-light border-end border-bottom border-white m-2" scope="col">Sl No</th>
+                                <th class="bg-light border-end border-bottom border-white mb-2" scope="col" colspan="3">
+                                    Charecter Name</th>
+                                <th class="bg-light border-end border-bottom  border-white mb-2" scope="col">Species
+                                </th>
+                                <th class="bg-light border-end border-bottom border-white mb-2" scope="col">Birth Year
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr (click)="selectRow(i)" *ngFor="let people of peopleData; let i=index">
+
+                                <td class="bg-secondary-subtle border-end border-bottom border-white ">{{i+1}}</td>
+                                <td class="bg-secondary-subtle border-end border-bottom border-white " colspan="3">
+                                    {{people.name}}
+                                </td>
+                                <td class="bg-secondary-subtle border-end border-bottom  border-white ">
+                                    {{people.species[0]}}</td>
+                                <td class="bg-secondary-subtle border-end border-bottom border-white ">{{people.
+                                    birth_year
+                                    }}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
