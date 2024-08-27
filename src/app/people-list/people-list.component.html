@@ -24,7 +24,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            <tr (click)="selectRow(i)" *ngFor="let people of peopleData; let i=index">
+                            <tr (click)="selectRow(i,people)" *ngFor="let people of peopleData; let i=index">
 
                                 <td class="bg-secondary-subtle border-end border-bottom border-white ">{{i+1}}</td>
                                 <td class="bg-secondary-subtle border-end border-bottom border-white " colspan="3">

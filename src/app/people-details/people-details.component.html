@@ -1,1 +1,67 @@
-<p>people-details works!</p>
+<div class="row">
+    <div class="col-lg-4">
+        <div class="card" style="width: 18rem;">
+            <div class="m-1">
+                <label for="name">Name: {{peopleDetail?.name}}</label>
+            </div>
+            <div class="m-1">
+                <label for="born">Born: {{peopleDetail?.birth_year}}</label>
+            </div>
+            <div class="m-1">
+                <label for="gender">Gender: {{peopleDetail?.gender}}</label>
+            </div>
+            <div class="m-1 mf-2">
+                <label for="height">Hieght: {{peopleDetail?.height}}</label>
+            </div>
+            <div class="m-1">
+                <label for="weight">weight: {{peopleDetail?.mass}}</label>
+            </div>
+            <div class="m-1">
+                <label for="created">Created At: {{peopleDetail?.created}}</label>
+            </div>
+            <div class="m-1">
+                <label for="edited">Eited At: {{peopleDetail?.edited}}</label>
+            </div>
+            <div class="m-1">
+                <label for="hair_color">Hair Color: {{peopleDetail?.hair_color}}</label>
+            </div>
+            <div class="m-1">
+                <label for="eye_color">Eye Color: {{peopleDetail?.eye_color}}</label>
+            </div>
+            <div class="m-1">
+                <label for="skin_color">Skin Color: {{peopleDetail?.skin_color}}</label>
+            </div>
+            <div class="m-1">
+                <label for="species">Species: {{peopleDetail?.species}}</label>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-8">
+        <div class="card">
+            <div class="row mb-2">
+                <h3 class="m-2 text-success">Films</h3>
+                <div class="card col-sm-8 ms-5 mb-2 bg-light" *ngFor="let film of films">
+                    <label for="name">Title:{{film.title}}</label>
+                    <label for="episode">Episode:{{film.episode}}</label>
+                    <label for="direcor">Director:{{film.director}}</label>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <h3 class="m-2 text-success">Vehicles</h3>
+                <div class="card col-sm-8 ms-5 mb-2 bg-light" *ngFor="let vehicle of vehicles">
+                    <label for="name">Title:{{vehicle.name}}</label>
+                    <label for="model">Episode:{{vehicle.model}}</label>
+                </div>
+            </div>
+
+            <div class="row mb-2">
+                <h3 class="m-2 text-success">Vehicles</h3>
+                <div class="card col-sm-8 ms-5 mb-2 bg-light" *ngFor="let startship of starShips">
+                    <label for="name">Title:{{startship.name}}</label>
+                    <label for="model">Episode:{{startship.model}}</label>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
