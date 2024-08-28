@@ -1,7 +1,50 @@
 <div class="row">
     <div class="col-lg-4" style="width: 20rem;">
         <div class="card" style="width: 18rem;">
-            <p>people-list works!</p>
+            <mat-accordion style="width: 13rem;" class=" ms-4 mb-2 mt-2">
+                <mat-expansion-panel class="bg-body-secondary">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title class="text-success">Movie Name</mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <mat-form-field style="width: 10rem;">
+                        <mat-label>search for movie name</mat-label>
+                        <input matInput />
+                    </mat-form-field>
+                </mat-expansion-panel>
+            </mat-accordion>
+            <mat-accordion style="width: 13rem;" class=" ms-4 mb-2">
+                <mat-expansion-panel class="bg-body-secondary">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title class="text-success">Species</mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <mat-form-field style="width: 10rem;">
+                        <mat-label>search for species</mat-label>
+                        <input matInput />
+                    </mat-form-field>
+                </mat-expansion-panel>
+            </mat-accordion>
+            <mat-accordion style="width: 13rem;" class=" ms-4 mb-2">
+                <mat-expansion-panel class="bg-body-secondary">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title class="text-success">Vehicle</mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <mat-form-field style="width: 10rem;">
+                        <mat-label>search for vehicle</mat-label>
+                        <input matInput />
+                    </mat-form-field>
+                </mat-expansion-panel>
+            </mat-accordion>
+            <mat-accordion style="width: 13rem;" class=" ms-4 mb-2">
+                <mat-expansion-panel class="bg-body-secondary">
+                    <mat-expansion-panel-header>
+                        <mat-panel-title class="text-success">Star Ships</mat-panel-title>
+                    </mat-expansion-panel-header>
+                    <mat-form-field style="width: 10rem;">
+                        <mat-label>search for star ships</mat-label>
+                        <input matInput />
+                    </mat-form-field>
+                </mat-expansion-panel>
+            </mat-accordion>
         </div>
     </div>
     <div class="col-lg-8">
@@ -38,6 +81,15 @@
                             </tr>
                         </tbody>
                     </table>
+                    <nav aria-label="...">
+                        <ul class="pagination justify-content-end">
+                            <li class="page-item active" aria-current="page">
+                                <span class="page-link">1</span>
+                            </li>
+                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        </ul>
+                    </nav>
                 </div>
             </div>
         </div>

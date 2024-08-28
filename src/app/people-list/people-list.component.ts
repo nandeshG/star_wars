@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+
 
 import { PeopleService } from '../services/people.service';
 import { Router } from '@angular/router';
@@ -6,7 +7,8 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-people-list',
   templateUrl: './people-list.component.html',
-  styleUrls: ['./people-list.component.css']
+  styleUrls: ['./people-list.component.css'],
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PeopleListComponent implements OnInit {
 
@@ -17,6 +19,7 @@ export class PeopleListComponent implements OnInit {
   films: any = []
   vehicles: any = []
   starships: any = []
+
   ngOnInit(): void {
     this.getPeople()
     this.getSpecies()
@@ -99,3 +102,4 @@ export class PeopleListComponent implements OnInit {
   }
 
 }
+
