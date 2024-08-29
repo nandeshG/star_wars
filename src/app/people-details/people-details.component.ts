@@ -18,7 +18,6 @@ export class PeopleDetailsComponent implements OnInit {
   ngOnInit(): void {
 
     this.peopleDetail = this.service.peopleRow
-    console.log(this.peopleDetail)
     this.films = Object.values(this.peopleDetail?.films)
     this.vehicles = Object.values(this.peopleDetail?.vehicles)
     this.starShips = Object.values(this.peopleDetail?.starships)
